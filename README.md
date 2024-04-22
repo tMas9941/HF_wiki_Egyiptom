@@ -1,2 +1,2 @@
 # HF_wiki_Egyiptom
-202402.20. Házi feladat
+2024.04.20. Házi feladat
