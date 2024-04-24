@@ -5,60 +5,85 @@ html {
 }
 
 body {
-	margin-top: 6px;
+	margin-top: 5px;
 	background-color: #f8f9fa;
 	color: #202122;
+	margin-left: 3.25rem;
+	margin-right: 3.25rem;
 }
-
+/***************************************************/
+/* HEADER setting */
 .header-container {
-	width: 100%;
-
 	display: flex;
 	justify-content: center;
 }
-.header-container header {
-	width: 100%;
+header {
 	display: flex;
-	padding-left: 3.25rem;
-	padding-right: 3.25rem;
-	flex-wrap: nowrap;
-	white-space: nowrap;
-	column-gap: 24px;
-	justify-content: center;
+	flex-flow: row nowrap;
 	align-items: center;
-}
-
-.top-header-left-container {
-	border: 3px solid green;
-	width: 248px;
-	height: 50px;
-	display: flex;
 	justify-content: left;
-
-	align-items: center;
-}
-#menu-icon {
-	height: 38px;
-}
-#wiki-icon {
-	height: 50px;
-}
-#search-icon {
-	height: 32px;
-}
-
-.top-header-right-container {
-	border: 3px solid red;
-
+	gap: 35px;
 	width: 100%;
-
-	display: flex;
-	justify-content: space-between;
 }
 
-.top-header-right-container div {
-	border: 1px solid blue;
+header img {
+	max-height: 50px;
+	max-width: fit-content;
+}
+
+/* LEFT EHADER settings */
+.left-header {
+	width: 240px;
+	max-height: 50px;
 	display: flex;
+	flex-flow: row nowrap;
 	align-items: center;
 	gap: 10px;
+}
+/* RIGHT HEADER settings */
+.right-header {
+	display: flex;
+	flex-flow: row nowrap;
+	flex: 1;
+	gap: 10px;
+}
+.right-header-right-container {
+	display: flex;
+
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: right;
+	flex: 1;
+}
+.right-header-right-container * {
+	flex: 0 0 fit-content;
+	margin-left: 10px;
+}
+
+.set-height {
+	height: 30px;
+}
+
+/*****************************************************/
+/* CONTENT settings */
+.page-container {
+	width: 100%;
+	height: 100vh;
+	margin-top: 20px;
+	background-color: rgba(95, 158, 160, 0.383);
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	gap: 35px;
+}
+
+.bookmark-container {
+	background-color: rgba(188, 75, 139, 0.532);
+	width: 240px;
+}
+
+.content-container {
+	background-color: rgba(97, 137, 137, 0.453);
+	flex: 1 1;
 }
